@@ -1,0 +1,90 @@
+body{
+    scroll-behavior: smooth;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+.bg-danger{
+  /* background-color: #fd5e53 !important; */
+
+  background: #fd5e53 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wrapper > div {
+  width: 100vw;
+  height: 100vh;
+
+}
+.wrapper {
+    display:flex;
+    flex-direction:row;
+    width: 800vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin:top left;
+}
+.outerwrapper{
+    width:100vh;
+    height:100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin:top left;
+    overflow-y: hidden;
+    overflow-x:hidden;
+    position: absolute;
+    scrollbar-width:none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display:none;
+}
+.myname{
+    transition:1s all ease-in-out;
+}
+.myname:hover{
+        text-shadow: -6px 1px 5px #0000008a;
+        transition:.4s all ease-in-out;
+}
+.font1{
+  font-family: 'Bebas Neue', cursive;
+}
+/* @media only screen and (min-height: 750px) {
+ .myname{
+   color:red !important;
+ }
+  .outerwrapper{
+    overflow-y:hidden;
+  }
+} */
+/* @media only screen and (min-height: 750px) {
+ .myname{
+   color:red !important;
+ }
+  .outerwrapper{
+    overflow-y:hidden;
+  }
+} */
+
+/* @media only screen and (max-height: 756px) {
+ .myname{
+   color:rgb(69, 121, 72) !important;
+ }
+  .outerwrapper{
+    overflow-y:scroll;
+  }
+} */
+
+/* @media only screen and (max-height: 770px) {
+
+  .outerwrapper{
+    overflow-y:scroll;
+  }
+} */
