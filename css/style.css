@@ -47,7 +47,12 @@ background: linear-gradient(to bottom, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, 
     display:none;
 }
 .myname{
-    transition:1s all ease-in-out;
+  /* display:none; */
+      position: absolute;
+    left: -384px;
+    font-size: 3rem;
+    letter-spacing: 1.3rem;
+    transition: 1s all ease-in-out;
 }
 .myname:hover{
         text-shadow: -6px 1px 5px #0000008a;
